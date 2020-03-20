@@ -1,0 +1,124 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#menu{
+   position: fixed;
+   width: 200px;
+   height: 100%;
+   background: #151719; 
+   left: -200px;
+   transition: all 500ms linear;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+#menu.activarMenu{
+    left: 0px;
+}
+
+
+#menu a {
+    width: 200px;
+    height: 35px;
+    display: block;
+    border-bottom: 1px solid rgb(100, 100,100,0.3);
+    padding: 10px 0px 0px 20px;
+    text-decoration: none;
+    font-style: normal;
+    background-color: 636363;
+    color: rgb(230,230,230,0.9);;
+   
+    
+}
+
+#menu a:hover {
+    
+    background: #151719;
+  
+    
+}
+
+.btn-iten:hover{
+    background: #483B38;
+}
+
+
+
+#menu .botonMenu{
+    position: absolute;
+    left: 230px;
+    top: 20px;
+    cursor: pointer;
+}
+
+#menu .botonMenu span{
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: #151719;
+    margin: 5px 0px;
+}
+
+/* hasta aqui es la animacion del menu*/
+
+
+
+
+
+.btn-iten{
+    background: #151719;
+    display: block;
+    color:rgb(230,230,230,0.9);
+    padding:15px 10px;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(100, 100,100,0.3);
+     
+
+}
+
+.iten-container{
+    background:#A6FFE3;
+    overflow: hidden;
+    max-height: 0px;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+    
+
+}
+
+.active + .iten-container{
+    max-height: 1000px;
+    
+    opacity:1 ;
+}
+
+.btn-iten.active{
+    background:#483B38;
+}
+
+.btn-iten:after{
+    content: '\002b';
+    float: right;
+}
+
+.list-container:hover{
+cursor: pointer;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
